@@ -1,0 +1,4 @@
+{
+  "slimehoney.config.disable.comment.disableSlimeHoneyBlockBehavior": "Slime and honey blocks now behave like solid blocks",
+  "slimehoney.config.disable.name.disableSlimeHoneyBlockBehavior": "SlimeAndHoneyBehavior"
+}

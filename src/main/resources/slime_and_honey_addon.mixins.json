@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ru.obabok.slime_and_honey_addon.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "AbstractBlockMixin",
+    "TweakerooConfigDisableMixin",
+    "HoneyBlockMixin",
+    "SlimeBlockMixin",
+    "CallbacksMixin",
+    "TweakerooConfigMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
