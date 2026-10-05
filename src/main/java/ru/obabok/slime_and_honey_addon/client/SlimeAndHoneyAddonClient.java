@@ -35,8 +35,8 @@ public class SlimeAndHoneyAddonClient implements ClientModInitializer {
             }else {
                 //slime
                 ((AbstractBlockMixin) Blocks.SLIME_BLOCK).setFriction(originalSlimeFriction);
-                ((AbstractBlockMixin) Blocks.SLIME_BLOCK).setBounceRestitution(originalSlimeSpeedFactor);
-                ((AbstractBlockMixin) Blocks.SLIME_BLOCK).setSpeedFactor(originalSlimeBounceRestitution);
+                ((AbstractBlockMixin) Blocks.SLIME_BLOCK).setBounceRestitution(originalSlimeBounceRestitution);
+                ((AbstractBlockMixin) Blocks.SLIME_BLOCK).setSpeedFactor(originalSlimeSpeedFactor);
 
                 //honey
                 ((AbstractBlockMixin) Blocks.HONEY_BLOCK).setFriction(originalHoneyFriction);
