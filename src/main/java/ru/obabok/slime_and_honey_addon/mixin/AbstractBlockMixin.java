@@ -1,21 +1,26 @@
 package ru.obabok.slime_and_honey_addon.mixin;
 
-import net.minecraft.block.AbstractBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
-@Mixin(AbstractBlock.class)
+@Mixin(BlockBehaviour.class)
 public interface AbstractBlockMixin {
     @Mutable
-    @Accessor("slipperiness")
-    void setSlipperiness(float friction);
+    @Accessor("friction")
+    void setFriction(float friction);
 
     @Mutable
-    @Accessor("velocityMultiplier")
-    void setVelocityMultiplier(float friction);
+    @Accessor("speedFactor")
+    void setSpeedFactor(float speedFactor);
 
     @Mutable
-    @Accessor("jumpVelocityMultiplier")
-    void setJumpVelocityMultiplier(float friction);
+    @Accessor("bounceRestitution")
+    void setBounceRestitution(float bounceRestitution);
+
+    @Mutable
+    @Accessor("jumpFactor")
+    void setJumpFactor(float jumpFactor);
+
 }

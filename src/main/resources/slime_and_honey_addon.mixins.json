@@ -5,13 +5,12 @@
   "compatibilityLevel": "JAVA_21",
   "client": [
     "AbstractBlockMixin",
-    "TweakerooConfigDisableMixin",
-    "HoneyBlockMixin",
-    "SlimeBlockMixin",
-    "CallbacksMixin",
-    "TweakerooConfigMixin"
+    "TweakerooConfigMixin",
+    "TweakerooConfigDisableMixin"
   ],
   "injectors": {
     "defaultRequire": 1
-  }
+  },
+  "mixins": [
+  ]
 }
